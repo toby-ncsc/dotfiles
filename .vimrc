@@ -23,3 +23,9 @@ ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
 ino <up> <Nop>
+
+" Load pathogen module
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
