@@ -34,3 +34,6 @@ filetype plugin indent on
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 set laststatus=2
 set t_Co=256
+
+" Set molokai colour scheme
+let g:molokai_original = 1
