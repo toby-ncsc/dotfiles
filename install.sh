@@ -13,12 +13,3 @@ mv PowerlineSymbols.otf /usr/share/fonts/
 mv 10-powerline-symbols.conf /etc/fonts/conf.d/
 fc-cache -vf /usr/share/fonts/
 
-#
-# symlink the vim files
-#
-
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-ln -sf $DIR/.vimrc ~/.vimrc
-ln -sf $DIR/.vim ~/.vim
-
