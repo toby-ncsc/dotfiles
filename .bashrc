@@ -115,3 +115,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Aliases
+
+alias lsl="ls -lh"
+alias lsal="ls -alh"
+
