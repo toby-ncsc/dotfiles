@@ -13,7 +13,8 @@ apt-get install -y python-pip
 # Install secondary tools
 pip install powerline-status
 
+# configure git. 
 git config --global user.name "Toby Wilkins"
 git config --global user.email "tobwilk@gmail.com"
-
+git config --global push.default simple
 
