@@ -1,15 +1,19 @@
-#!/bin/sh
+#!/bin/bash
 
-#
-# Install Powerline
-#
+# Bootstrap a vanilla ubuntu machine
 
+# Update the machine
+apt-get update -y
+apt-get upgrade -y
+
+# Install core tools
+apt-get install -y vim tmux git
 apt-get install -y python-pip
+
+# Install secondary tools
 pip install powerline-status
 
-wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
-wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
-mv PowerlineSymbols.otf /usr/share/fonts/
-mv 10-powerline-symbols.conf /etc/fonts/conf.d/
-fc-cache -vf /usr/share/fonts/
+git config --global user.name "Toby Wilkins"
+git config --global user.email "tobwilk@gmail.com"
+
 
