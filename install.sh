@@ -26,5 +26,6 @@ git submodule update
 DIR="$(cd "$(dirname "$0")" && pwd)"
 ln -sf $DIR/.bashrc ~/.bashrc
 ln -sf $DIR/.vimrc ~/.vimrc
-ln -sf $DIR/.tmux.conf ~/.tmux.conf
 ln -sfn $DIR/.vim ~/.vim
+ln -sf $DIR/.tmux.conf ~/.tmux.conf
+ln -sfn $DIR/.tmux ~/.tmux
