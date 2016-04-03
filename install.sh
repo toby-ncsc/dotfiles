@@ -13,10 +13,14 @@ apt-get install -y python-pip
 # Install secondary tools
 pip install powerline-status
 
-# configure git. 
+# configure git 
 git config --global user.name "Toby Wilkins"
 git config --global user.email "tobwilk@gmail.com"
 git config --global push.default simple
+
+# Pull the git submodules
+git submodule init
+git submodule update
 
 #symlink the files
 DIR="$(cd "$(dirname "$0")" && pwd)"
