@@ -1,9 +1,6 @@
 [submodule ".vim/bundle/nerdtree.git"]
 	path = .vim/bundle/nerdtree.git
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = git@github.com:tmux-plugins/tpm.git
