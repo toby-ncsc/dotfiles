@@ -2,35 +2,29 @@
 " Pathogen
 execute pathogen#infect()
 
-
 " Color scheme
 syntax on
 set background=dark
 let g:molokai_original=1
 "colorscheme solarized
 
-
 " Set tabs to 4 spaces
 set cursorline
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 
 set smarttab
 
-
 " line numbers
 set number
 highlight LineNr ctermfg=DarkGray
-
 
 " Highlight searching
 set incsearch
 set showmatch
 set hlsearch
 
-
 " Highlight line width
 highlight ColorColumn ctermbg=magenta 
 call matchadd('ColorColumn', '\%81v', 100)
-
 
 " Disable the arrow keys to force good vim practice
 "no <down> <Nop>
