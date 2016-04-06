@@ -1,6 +1,8 @@
 .tmux/plugins/*
 !.tmux/plugins/tpm
 
+.vim/bundle/*
+
 *.swp
 .vim/.netrwhist
 
