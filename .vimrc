@@ -13,6 +13,9 @@ set cursorline
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 
 set smarttab
 
+" Disable auto comments
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 " line numbers
 set number
 highlight LineNr ctermfg=DarkGray
@@ -36,11 +39,9 @@ call matchadd('ColorColumn', '\%81v', 100)
 "ino <right> <Nop>
 "ino <up> <Nop>
 
-
 " Filetype stuff
 filetype plugin on 
 filetype indent on
-
 
 " Powerline
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
