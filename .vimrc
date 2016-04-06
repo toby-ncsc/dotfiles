@@ -5,8 +5,9 @@ execute pathogen#infect()
 " Color scheme
 syntax on
 set background=dark
-let g:molokai_original=1
+"let g:molokai_original=1
 "colorscheme solarized
+colorscheme base16-default
 
 " Set tabs to 4 spaces
 set cursorline
