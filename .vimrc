@@ -39,6 +39,9 @@ call matchadd('ColorColumn', '\%81v', 100)
 "ino <right> <Nop>
 "ino <up> <Nop>
 
+" NERDTree toggle key
+map <C-n> :NERDTreeToggle<CR>
+
 " Filetype stuff
 filetype plugin on 
 filetype indent on
