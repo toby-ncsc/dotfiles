@@ -42,6 +42,10 @@ call matchadd('ColorColumn', '\%81v', 100)
 " NERDTree toggle key
 map <C-n> :NERDTreeToggle<CR>
 
+" Map jj to escape insert mode, its quicker
+imap jj <Esc>
+
+
 " Filetype stuff
 filetype plugin on 
 filetype indent on
