@@ -4,12 +4,12 @@ execute pathogen#infect()
 
 
 " Color scheme
-let base16colorspace=256
+"let base16colorspace=256
 syntax on
-set background=dark
-"let g:molokai_original=1
+"set background=dark
+let g:molokai_original=1
 "colorscheme solarized
-colorscheme base16-default
+"colorscheme base16-default
 
 
 " Set tabs to 4 spaces
