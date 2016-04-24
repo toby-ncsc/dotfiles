@@ -31,7 +31,7 @@ ln -sf $DIR/.tmux.conf ~/.tmux.conf
 ln -sfn $DIR/.tmux ~/.tmux
 
 tmux source ~/.tmux.conf
-
+source ~/.bashrc
 
 
 
