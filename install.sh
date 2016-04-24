@@ -29,6 +29,8 @@ ln -sf $DIR/.vimrc ~/.vimrc
 ln -sfn $DIR/.vim ~/.vim
 ln -sf $DIR/.tmux.conf ~/.tmux.conf
 ln -sfn $DIR/.tmux ~/.tmux
+ln -sf $DIR/tmuxme.sh ~/tmuxme.sh
+
 
 tmux source ~/.tmux.conf
 source ~/.bashrc
