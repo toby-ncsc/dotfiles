@@ -31,11 +31,14 @@ ln -sf $DIR/.tmux.conf ~/.tmux.conf
 ln -sfn $DIR/.tmux ~/.tmux
 ln -sf $DIR/tmuxme.sh ~/tmuxme.sh
 
+# Install powerline
+wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+sudo mv PowerlineSymbols.otf /usr/share/fonts/
+sudo fc-cache -vf
+sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+sudo fc-cache -vf
 
 tmux source ~/.tmux.conf
 source ~/.bashrc
-
-
-
 
 

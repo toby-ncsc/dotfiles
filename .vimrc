@@ -8,6 +8,7 @@ execute pathogen#infect()
 syntax on
 "set background=dark
 let g:molokai_original=1
+set t_Co=256
 "colorscheme solarized
 "colorscheme base16-default
 
