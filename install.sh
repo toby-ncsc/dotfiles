@@ -41,4 +41,5 @@ sudo fc-cache -vf
 tmux source ~/.tmux.conf
 source ~/.bashrc
 
-
+# Now go into a tmux session, eg with 'tmux new -s main'
+# inside, update plugins with 'ctrl-b I'
