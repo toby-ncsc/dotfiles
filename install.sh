@@ -13,6 +13,10 @@ apt-get install -y python-pip
 # Install secondary tools
 pip install powerline-status
 
+# Install stuff I like
+sudo apt-get install -y tree
+
+
 # configure git 
 git config --global user.name "Toby Wilkins"
 git config --global user.email "tobwilk@gmail.com"
