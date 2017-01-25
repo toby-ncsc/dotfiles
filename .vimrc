@@ -51,7 +51,7 @@ set hlsearch
 
 " NERDTree toggle key - ctrl+n
 map <C-n> :NERDTreeToggle<CR>
-
+let NERDTreeShowHidden=1
 
 " Map jj to escape insert mode, its quicker
 imap jj <Esc>
