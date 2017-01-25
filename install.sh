@@ -7,8 +7,14 @@ apt-get update -y
 apt-get upgrade -y
 
 # Install core tools
-apt-get install -y vim tmux git
+apt-get install -y vim git
 apt-get install -y python-pip
+
+# Install tmux v2
+sudo apt-get install -y python-software-properties software-properties-common
+sudo add-apt-repository -y ppa:pi-rho/dev
+sudo apt-get update -y
+sudo apt-get install -y tmux=2.0-1~ppa1~t
 
 # Install stuff I like
 sudo apt-get install -y tree
