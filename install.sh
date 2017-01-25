@@ -30,7 +30,6 @@ git submodule update
 
 #symlink the files
 DIR="$(cd "$(dirname "$0")" && pwd)"
-ln -sf $DIR/.bashrc ~/.bashrc
 ln -sf $DIR/.vimrc ~/.vimrc
 ln -sfn $DIR/.vim ~/.vim
 ln -sf $DIR/.tmux.conf ~/.tmux.conf
