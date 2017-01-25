@@ -2,7 +2,6 @@
 " Pathogen
 execute pathogen#infect()
 
-
 " Color scheme
 "let base16colorspace=256
 syntax on
@@ -67,12 +66,5 @@ filetype indent on
 set nobackup " do not keep backups after close
 set nowritebackup " do not keep a backup while working
 set noswapfile " don't keep swp files either
-
-
-" Powerline
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
-set laststatus=2
-
-
 
 
