@@ -6,8 +6,8 @@ execute pathogen#infect()
 "let base16colorspace=256
 syntax on
 "set background=dark
-let g:molokai_original=1
-set t_Co=256
+"let g:molokai_original=1
+"set t_Co=256
 "colorscheme solarized
 "colorscheme base16-default
 
@@ -49,7 +49,7 @@ set hlsearch
 "ino <up> <Nop>
 
 
-" NERDTree toggle key
+" NERDTree toggle key - ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
 
