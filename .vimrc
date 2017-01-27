@@ -52,5 +52,8 @@ set nobackup " do not keep backups after close
 set nowritebackup " do not keep a backup while working
 set noswapfile " don't keep swp files either
 
+"colours
+highlight LineNr ctermfg=grey
+
 " Load plugins
 call pathogen#infect()
