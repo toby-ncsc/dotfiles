@@ -15,7 +15,7 @@ set number
 syntax on
 
 " set leader key
-let mapleader=","
+"let mapleader=","
 
 " Disable auto comments
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -36,8 +36,8 @@ set hlsearch
 "ino <up> <Nop>
 
 " NERDTree toggle key - ctrl+n
-" map <C-n> :NERDTreeToggle<CR>
-map <leader>n :NERDTreeToggle<CR>
+ map <C-n> :NERDTreeToggle<CR>
+"map <leader>n :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
 " Map jj to escape insert mode, its quicker
