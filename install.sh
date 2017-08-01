@@ -3,12 +3,12 @@
 # Bootstrap a vanilla ubuntu machine
 
 # Update the machine
-apt-get update -y
-apt-get upgrade -y
+sudo apt-get update -y
+sudo apt-get upgrade -y
 
 # Install core tools
-apt-get install -y vim git
-apt-get install -y python-pip
+sudo apt-get install -y vim git
+sudo apt-get install -y python-pip
 
 # Install tmux v2
 sudo apt-get install -y python-software-properties software-properties-common
@@ -20,8 +20,8 @@ sudo apt-get install -y tmux=2.0-1~ppa1~t
 sudo apt-get install -y tree
 
 # configure git 
-git config --global user.name "Toby Wilkins"
-git config --global user.email "tobwilk@gmail.com"
+git config --global user.name "YOUR NAME"
+git config --global user.email "YOUR EMAIL"
 git config --global push.default simple
 
 # Pull the git submodules
