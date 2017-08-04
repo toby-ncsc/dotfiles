@@ -6,4 +6,8 @@
 
   - create: `tmux new -s nameofsesshion`
   - attatch:`tmux attatch -t nameofsesshion`
-  - detatch: `hotkey + b` 
+  - detatch: `hotkey + b`
+
+  - new window: `hotkey + c`
+  - list windows: `hotkey + w"
+  - rename window: `hotkey + ,` 
