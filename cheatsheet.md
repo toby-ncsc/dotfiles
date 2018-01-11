@@ -1,13 +1,25 @@
-# Tobys Command cheetsheet
+# tmux
 
-## TMUX
+hotkey: ctrl + b
 
-  - tmux hotkey: `Ctrl+b`
+# General
+Disconnect         hotkey + d
 
-  - create: `tmux new -s nameofsesshion`
-  - attatch:`tmux attatch -t nameofsesshion`
-  - detatch: `hotkey + b`
 
-  - new window: `hotkey + c`
-  - list windows: `hotkey + w"
-  - rename window: `hotkey + ,` 
+## Windows
+
+New window          hotkey + c
+Kill window         hotkey + &
+Rename window       hotkey + ,
+List windows        hotkey + w
+next window         hotkey + n
+previouse window    hotkey + p
+
+
+## Pains
+note, some of these are specific to my config
+
+Kill pain           hotkey + x
+New vertical        hotkey + |
+New horizontal      hotkey + -
+Move around         hotkey + up/down/left/right
