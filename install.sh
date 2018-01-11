@@ -38,6 +38,8 @@ ln -sfn $DIR/.tmux ~/.tmux
 ln -sf $DIR/tmux-createnew.sh ~/tmux-createnew.sh
 ln -sf $DIR/tmuxme.sh ~/tmux-attatch.sh
 
+ln -sf $DIR/cheatsheet.md ~/cheatsheet.md
+
 tmux source ~/.tmux.conf
 source ~/.bashrc
 
