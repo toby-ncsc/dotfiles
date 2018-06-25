@@ -6,6 +6,23 @@
 export DOTFILES_DIR
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# set internet proxy
+while true; do
+       read -p "Do you want to set an internet proxy? " yn
+        case $yn in
+            [Yy]* ) 
+                read -p "what is the http proxy? " httpproxy
+                read -p "What is the httpS proxy? " httpsproxy
+                echo "export http_proxy=${httpproxy}" >> ~/.bashrc; 
+                echo "export https_proxy=${httpsproxy}" >> ~/.bashrc 
+                break;;
+            [Nn]* ) 
+                report "Continuing without a proxy"; 
+                break;;
+             * ) echo "Please answer yes or no";;
+        esac
+done
+source ~/.bashrc
 
 # Update the machine
 sudo apt-get update -y
