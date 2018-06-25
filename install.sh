@@ -2,6 +2,11 @@
 
 # Bootstrap a vanilla ubuntu machine
 
+# Get the current directory of this script wherever it was executed from
+export DOTFILES_DIR
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+
 # Update the machine
 sudo apt-get update -y
 sudo apt-get upgrade -y
