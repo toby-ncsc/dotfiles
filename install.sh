@@ -23,7 +23,7 @@ sudo apt-get install -y tmux=2.0-1~ppa1~t
 
 # Install stuff I like
 sudo apt-get install -y tree
-pip install httpie
+pip install httpie virtualenv
 
 # create SSH keypair
 mkdir ~/.ssh
@@ -40,8 +40,16 @@ echo "Copy this and register it on Github as a new key, then press any key"
 read
 
 # configure git 
-git config --global user.name "YOUR NAME"
-git config --global user.email "YOUR EMAIL"
+if [ "$(git config --global --get user.email)" == "" ]; then
+    read -p "What email address do you want to use for git commits? " gitemail
+    git config --global user.email $gitemail
+fi
+
+if [ "$(git config --global --get user.name)" == "" ]; then
+    read -p "What name do you want to use for git commits? " gitname
+    git config --global user.email $gitname
+fi
+
 git config --global push.default simple
 
 # Pull the git submodules
