@@ -22,13 +22,13 @@ pip install httpie
 
 # create SSH keypair
 mkdir ~/.ssh
-cd ~/.ssh
+#cd ~/.ssh
 while true; do
     read -p "What email should be used for a new SSH key? " keyemail
     if [[ -n "$keyemail" ]]; then break; fi
 done
 
-ssh-keygen -t rsa -b 4096 -C $keyemail
+ssh-keygen -t rsa -b 4096 -C $keyemail -f $HOME/.ssh/id_rsa
 echo "The default key is: "
 cat ~/.ssh/id_rsa.pub
 echo "Copy this and register it on Github as a new key, then press any key"
