@@ -7,8 +7,8 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 
 # Install core tools
-sudo apt-get install -y vim git
-sudo apt-get install -y python-pip
+sudo apt-get install -y vim git python3
+sudo apt-get install -y python3-pip
 
 # Install tmux v2
 sudo apt-get install -y python-software-properties software-properties-common
@@ -18,6 +18,7 @@ sudo apt-get install -y tmux=2.0-1~ppa1~t
 
 # Install stuff I like
 sudo apt-get install -y tree
+pip install httpie
 
 # configure git 
 git config --global user.name "YOUR NAME"
